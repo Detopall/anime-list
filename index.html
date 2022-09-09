@@ -5,6 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/css/screen.css">
+	<script src="assets/js/display-all-anime.js"></script>
+	<script src="assets/js/display-chosen-anime.js"></script>
 	<script src="assets/js/script.js"></script>
 	<title>Anime List</title>
 </head>
@@ -14,36 +16,12 @@
 	<main>
 		<form>
 			<label for="q">Search:</label>
-			<input type="text" id="q" name="q">
+			<input type="text" id="q" name="q" autocomplete="off">
 			<button type="submit">Search</button>
 		</form>
 
 		<div id="all-anime">
-			<figure>
-				<img src="https://cdn.myanimelist.net/images/anime/1063/95086.jpg?s=e60cce295ac479ab79ffec04aa5c38e1">
-				<figcaption>Title</figcaption>
-			</figure>
-			<figure>
-				<img src="https://cdn.myanimelist.net/images/anime/1063/95086.jpg?s=e60cce295ac479ab79ffec04aa5c38e1">
-				<figcaption>Title</figcaption>
-			</figure>
-			<figure>
-				<img src="https://cdn.myanimelist.net/images/anime/1063/95086.jpg?s=e60cce295ac479ab79ffec04aa5c38e1">
-				<figcaption>Title</figcaption>
-			</figure>
-			<figure>
-				<img src="https://cdn.myanimelist.net/images/anime/1063/95086.jpg?s=e60cce295ac479ab79ffec04aa5c38e1">
-				<figcaption>Title</figcaption>
-			</figure>
-			<figure>
-				<img src="https://cdn.myanimelist.net/images/anime/1063/95086.jpg?s=e60cce295ac479ab79ffec04aa5c38e1">
-				<figcaption>Title</figcaption>
-			</figure>
-			<figure>
-				<img src="https://cdn.myanimelist.net/images/anime/1063/95086.jpg?s=e60cce295ac479ab79ffec04aa5c38e1">
-				<figcaption>Title</figcaption>
-			</figure>
-
+			<!-- inject all anime with title in figure -->
 		</div>
 	</main>
 
