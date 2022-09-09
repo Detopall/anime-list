@@ -6,6 +6,14 @@ const URL = "https://jikan1.p.rapidapi.com/search/anime?q=";
 
 function init(){
 	document.addEventListener("submit", checkUserInfo);
+	document.addEventListener("click", chosenAnime);
+	document.addEventListener("click", goBack);
+}
+
+function goBack(e){
+	if (!e.target.closest("#back")) return;
+	document.querySelector("main").classList.remove("hidden");
+	document.querySelector("article").classList.add("hidden");
 }
 
 async function getAllAnime(query){
@@ -16,7 +24,6 @@ async function getAllAnime(query){
 			'X-RapidAPI-Host': 'jikan1.p.rapidapi.com'
 		}
 	};
-
 	const fetchAnime = await fetch(`${URL}${query}`, options);
 	const res = fetchAnime.json();
 	return res;

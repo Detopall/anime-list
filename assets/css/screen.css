@@ -3,6 +3,7 @@
 body {
 	font-size: 1.3rem;
 	width: 90vw;
+	margin: 0;
 	font-family: 'Roboto Slab', serif;
 	background-color: #174ea6;
 	color: white;
@@ -18,6 +19,10 @@ header {
 
 p {
 	margin: 0;
+}
+
+a {
+	color: white;
 }
 
 img {
@@ -54,15 +59,29 @@ label, input {
 	margin-right: 0.5rem;
 }
 
-#chosen-anime, #all-anime {
+.chosen-anime, #all-anime {
 	margin-top: 5rem;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+}
+
+.chosen-anime {
+	justify-content: center;
+}
+
+.chosen-anime img {
+	margin-left: 6rem;
+	margin-right: 6rem;
+	border: 0.3rem solid black;
+}
+
+#info {
+	max-width: 60rem;
 }
 
 #all-anime {
 	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 #all-anime figure {
