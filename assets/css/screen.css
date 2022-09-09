@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+body {
+	font-size: 1.3rem;
+	width: 90vw;
+	font-family: 'Roboto Slab', serif;
+	background-color: #174ea6;
+	color: white;
+}
+
+header {
+	display: block;
+	text-align: center;
+	font-size: 2rem;
+	margin-top: 5rem;
+	text-decoration: underline;
+}
+
+p {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+button:not(form button) {
+	position: absolute;
+	bottom: 15rem;
+	left: 14.5rem;
+	background-color: white;
+	border-radius: 1rem;
+	border: none;
+	box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+	color: #3c4043;
+	cursor: pointer;
+	padding: 0.6rem;
+	font-family: 'Roboto Slab', serif;
+}
+
+button:hover:not(form button) {
+	background: #F6F9FE;
+	color: #174ea6;
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5rem;
+}
+
+label, input {
+	margin-right: 0.5rem;
+}
+
+#chosen-anime, #all-anime {
+	margin-top: 5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#all-anime {
+	flex-wrap: wrap;
+}
+
+#all-anime img {
+	cursor: pointer;
+	border: 0.3rem solid black;	
+}
+
+#all-anime img:hover {
+	opacity: 0.8;
+}
+
+
+.hidden {
+	display: none;
+}
+
+
