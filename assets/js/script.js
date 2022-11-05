@@ -4,6 +4,16 @@ document.addEventListener("DOMContentLoaded", init);
 
 const URL = "https://jikan1.p.rapidapi.com/search/anime?q=";
 
+/*
+
+
+CALLING THIS API RETURNS IN 410 -> GONE.
+THIS MEANS THAT THE API HAS BEEN REMOVED.
+WILL REFACTOR LATER TO WORK WITH ANOTHER API.
+
+
+*/
+
 function init(){
 	document.addEventListener("submit", checkUserInfo);
 	document.addEventListener("click", chosenAnime);
@@ -17,10 +27,13 @@ function goBack(e){
 }
 
 async function getAllAnime(query){
+	const rapidKey = document.querySelector("#rapidKey").value;
+	if (rapidKey === null) return;
+
 	const options = {
 		method: 'GET',
 		headers: {
-			'X-RapidAPI-Key': '90afc290a4msh942c639bb0fe563p15afe0jsn7d560927cf10',
+			'X-RapidAPI-Key': `${rapidKey}`,
 			'X-RapidAPI-Host': 'jikan1.p.rapidapi.com'
 		}
 	};

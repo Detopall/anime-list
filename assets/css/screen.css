@@ -51,12 +51,13 @@ button:hover:not(form button) {
 form {
 	display: flex;
 	justify-content: center;
+	flex-flow: column;
 	align-items: center;
 	margin-top: 5rem;
 }
 
 label, input {
-	margin-right: 0.5rem;
+	margin-bottom: 1rem;
 }
 
 .chosen-anime, #all-anime {
